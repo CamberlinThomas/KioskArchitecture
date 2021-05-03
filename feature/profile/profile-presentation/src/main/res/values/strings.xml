@@ -1,0 +1,5 @@
+<resources>
+    <string name="profile_connected_profile">Profil connecté:</string>
+    <string name="profile_complete_name">Nom complet:</string>
+    <string name="profile_complete_birth_date">Date de naissance:</string>
+</resources>
