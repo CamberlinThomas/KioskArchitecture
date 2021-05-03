@@ -5,8 +5,9 @@ import com.decathlon.profile_domain.model.ProfileUI
 import com.decathlon.shared.constant.Constants.DateFormat.Companion.SIMPLE_DATE_FORMAT
 import com.decathlon.shared.extension.toSimpleDateFormatUTC
 import java.util.*
+import javax.inject.Inject
 
-class ProfileMapper : IProfileMapper {
+class ProfileMapper @Inject constructor(): IProfileMapper {
     override fun toProfileUI(profileDTO: ProfileDTO) =
         ProfileUI(
             profileDTO.firstName + " " + profileDTO.lastName,

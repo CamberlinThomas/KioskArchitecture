@@ -1,12 +1,15 @@
-include ':common:communication'
-include ':common:data'
-include ':domain'
-include ':common:presentation'
 rootProject.name = "Archi"
 include ':app',
+
+        ':common:communication',
+        ':common:core',
+        ':common:data',
+        ':common:domain',
+        ':common:presentation',
+
         ':feature:profile:sample',
         ':feature:profile:profile-presentation',
         ':feature:profile:profile-data',
-        ':feature:profile:profile-domain',
-        ':common:core'
+        ':feature:profile:profile-domain'
+
 

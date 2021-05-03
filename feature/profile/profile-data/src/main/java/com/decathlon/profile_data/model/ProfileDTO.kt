@@ -4,6 +4,6 @@ data class ProfileDTO(
     val firstName: String,
     val lastName: String,
     val birthDate: Long,
-    val databaseId:Int,
+    val databaseId: Int,
     val signUpDate: Int
 )

@@ -1,12 +1,21 @@
 package com.decathlon.archi
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.decathlon.archi.databinding.ActivityMainBinding
+import com.decathlon.presentation.extensions.activity.replace
+import com.decathlon.profile_presentation.ProfileFragment
+import dagger.android.support.DaggerAppCompatActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        replace(ProfileFragment.newInstance(), binding.container.id)
     }
 }

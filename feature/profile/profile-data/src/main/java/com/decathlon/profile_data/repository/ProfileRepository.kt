@@ -6,8 +6,9 @@ import com.decathlon.profile_data.mapper.IProfileMapper
 import com.decathlon.profile_domain.IProfileRepository
 import com.decathlon.profile_domain.model.ProfileUI
 import io.reactivex.rxjava3.core.Single
+import javax.inject.Inject
 
-class ProfileRepository(
+class ProfileRepository @Inject constructor(
     private val localDataSource: IProfileLocalDataSource,
     private val remoteDataSource: IProfileRemoteDataSource,
     private val mapper: IProfileMapper

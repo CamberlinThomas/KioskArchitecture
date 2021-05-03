@@ -1,6 +1,7 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 apply from: "$project.rootDir/gradle/dependency/dependency_rx.gradle"
+apply from: "$project.rootDir/gradle/dependency/dependency_dagger.gradle"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
