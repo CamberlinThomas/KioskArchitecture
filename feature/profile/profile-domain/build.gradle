@@ -4,6 +4,7 @@ apply from: "$project.rootDir/gradle/dependency/dependency_rx.gradle"
 apply from: "$project.rootDir/gradle/dependency/dependency_dagger.gradle"
 
 dependencies {
+    api project(':common:domain')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

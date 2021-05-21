@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
+      <module name="Archi.app" target="11" />
+      <module name="Archi.common.communication" target="11" />
+      <module name="Archi.common.core" target="11" />
+      <module name="Archi.common.data" target="11" />
+      <module name="Archi.common.presentation" target="11" />
+      <module name="Archi.feature.profile.profile-data" target="11" />
+      <module name="Archi.feature.profile.profile-domain" target="1.8" />
+      <module name="Archi.feature.profile.profile-presentation" target="11" />
       <module name="common-domain" target="1.7" />
       <module name="domain" target="1.7" />
       <module name="profile-domain" target="1.7" />

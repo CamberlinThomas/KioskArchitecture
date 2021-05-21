@@ -9,9 +9,9 @@ class ProfileRemoteDataSource @Inject constructor(): IProfileRemoteDataSource {
         ProfileDTO(
             "Fabio",
             "Quartararo",
-            924604786,
+            924604786000,
             1234,
-            1429526386
+            1429526386000
         )
     )
 }
